@@ -1,0 +1,10 @@
+* Sping 2020 - 235 - Homework / Classwork
+
+* Last name: Alija
+* First name: Asllan
+
+* GitHub username: aalija8157
+* General instructions:
+- Fill in your name and GitHub username on top.
+- For each assignment (classwork or homework) make a folder with the assignment name 
+- place all necessary files in that folder.
