@@ -1,0 +1,96 @@
+text 1 - Traversal
+
+a. Input: 50.
+The current node is null, so set the current node to 50.
+
+b. input: 60.
+50 < 60, so go right.
+The current node is null, so set the current node to 60.
+
+c. input: 70.
+50 < 70, so go right.
+60 < 70, so go right.
+The current node is null, so set the current node to 70.
+
+d. input: 20.
+50 > 20, so go left.
+The current node is null, so set the current node to 20.
+
+e. input: 65.
+50 < 65, so go right.
+60 < 65, so go right.
+70 > 65, so go left.
+The current node is null, set to 65.
+
+f. input: 63.
+50 < 63, go right
+60 < 63, go right.
+70 > 63, go left.
+65 > 63, go left.
+Current node is null, set to 63.
+
+g. input: 67.
+50 < 67, go right.
+60 < 67, go right.
+70 > 67, go left.
+65 < 67, go right.
+current node is null, set to 67.
+
+h. input: 62.
+50 < 62, go right.
+60 < 62, go right.
+70 > 62, go left.
+65 > 62, go left.
+63 > 62, go left.
+current node is null, set to 62.
+
+i: input: 80
+50 < 80, go right.
+60 < 80, go right.
+70 < 80, go right.
+current node is null, set to 80.
+
+
+text 2 sorting
+
+
+arr = {7, 4, 3, 2, 6, 5, 1, 9, 8, 10}
+pivot = 7.
+if the element is less than or equal to 7, put into lower arr
+else put into upper.
+
+lower = {4, 3, 2, 6, 5, 1}
+upper = {9, 8, 10}
+
+
+2.
+ as long as you choose the right pivot, it will be much faster
+than mergse sort. but the worst case is O(n^2) so if you need to be strictly
+better than polynomial runtime, then you have to choose merge sort.
+
+merge sort is usually slower than quicksort but its more consistent.
+the worst case for mergesort is O(nlogn) which is very good. quicksort will
+usually be faster though (unless you get unlucky with the random pivot pick, 
+then it will be much slower). From a student's perspective the merge sort 
+is more intuitive.
+
+
+text 3. runtime.
+
+1. insertion worst case is O(n), for example if you just have a huge line
+of numbers that always go left of the root, you have to go through all the elements to insert it.
+however if the bstree is actually designed as a bstree, the insertion will be O(logN), as you know 
+if the element is to the left or right to the current node, like the binary search
+
+deletion is the same as insertion, if the bstree is just a string of elements to the left or right, and
+the element you want to delete is at the end of that string, the worst case is O(n) (n is number of 
+elements) but 
+
+searching is worst case O(n) as well, for the same reasons as before, and is O(logN) usually because its
+a binary search.
+
+2. a heap would be preferable if we need constant access to the largest or smallest element of the 
+set, however searching for an element will always be O(n) since we have to search every element of the
+heap, while BSTree is usually at O(logN) (except for the worst case, of course). Heap insertion and 
+deletion are the same, but heap is worse at searching and better at finding mins/maxes (depending on
+the type of heap).

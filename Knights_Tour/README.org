@@ -1,0 +1,71 @@
+* Spring 2020 - 235 - Project 01 - Knight's tour
+
+* Due: Thursday 2/13 8:00am
+
+* Last name: Alija
+* First name: Asllan
+* GitHub username: aalija8157
+* Notes: At first I started doing this with 8 if statements in a row like in the maze example, it worked but was very sloppy. I couldn't figure out a way to make the code shorter so I googled and found out about the arrays you can used, which I honestly did not think of. I just wanted to put this here because I felt guilty for googling it. I also looked up the printf thing which made life a lot easier for printing out the array.
+ 
+* General instructions:
+- Fill in your name and GitHub username on top.
+- Use the Notes section to add any notes to the instructor.
+
+- Do Not add object files (anything with .o), executables, (a.out etc.) or any  files other than the .cpp files specified for the tasks to the repo.
+
+* Project instructions
+
+Write a program to solve either the Knight's tour or the N-queens
+problem. The core function should take a board's size (8 for a
+standard 8x8 board, 5 for a 5x5 board etc) and any other parameters
+you need. 
+
+It should find a solution to the problem and print out the results. 
+
+** Knight's tour
+
+A knight can move on a chess board in 1-2 combinations
+([[https://en.wikipedia.org/wiki/Knight_%2528chess%2529][https://en.wikipedia.org/wiki/Knight_%28chess%29]]). A knight's tour
+shows a sequence of moves where the knight visits every square once
+without repeating any steps
+([[https://en.wikipedia.org/wiki/Knight%2527s_tour][https://en.wikipedia.org/wiki/Knight%27s_tour]]).
+
+Your program should solve a knight's tour
+
+- Use the maze code as a roadmap for your solution. Look for how the
+  two problems are analagous.
+- When you start, print out every move (as the maze does) to make sure
+  your recursion is working but then turn off the delay or turn off
+  the printouts until the end - this will make your program run much
+  more quickly.
+- use numbers in your board to indicate steps so put a 0 in the square
+  the Knight first visits, 1 in the next etc. This way you can easily
+  confirm your solution.
+- Your final submission should solve a 5x5 without animation (or with
+  a very fast animation).
+* N-Queens problem
+
+The N-Queens problem asks how you can place N queens on an NxN chess
+board so that no queen can capture any other queen. Since queens move
+any number of spaces horizontally, vertically, or diagonally that
+means you can have at most one queen on any given row, column or
+diagonal.
+
+Here are more details:
+[[https://en.wikipedia.org/wiki/Eight_queens_puzzle][https://en.wikipedia.org/wiki/Eight_queens_puzzle]]
+
+See the knight's tour section for some additional general hint as to
+how to proceed.
+
+
+
+* Project specifications
+- Your project should have a Makefile that has a target *main*. This
+  should be the first target so typing *make* will build that target.
+- The *main* target should build an executable named *main*. When run,
+  *main* should print out a solved Knight's tour or N-queens board for
+  a 5x5 board. Your project should work on any board size but the test
+  should be for 5x5.
+- You do not need unit tests for this assignment.
+
+

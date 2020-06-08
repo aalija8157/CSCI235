@@ -1,0 +1,30 @@
+* Sping 2020 - 136 - Project 0
+
+* Last name: Alija
+* First name: Asllan
+
+* GitHub username: aalija8157
+* Notes:
+
+
+* General instructions:
+- Fill in your name and GitHub username on top.
+- Use the Notes section to add any notes to the instructor.
+
+
+* Technical Requirements
+** Implement myVector as specified in the email on January 6.
+** Other requirements
+- You must create / use a Makefile with at least two targets
+  - *main* which will build an executable named *main*
+  - *test* which will build the tests (run via ~./test~)
+- You must provide adequate test cases.
+
+* Due dates(s)
+
+Since this assignment was given on Jan 6 for the start of this
+semester, you must submit you base code before class on
+Monday. *HOWEVER* since you didn't know you'd need a Makefile or
+doctest based tests you can update your project to include those up
+until the start of Thursday's class.
+

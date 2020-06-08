@@ -1,0 +1,101 @@
+* Spring 2020 - 235 - Final Exam
+
+* Part 1 Due: Thursday 5/14 11:00am - released 5/14
+
+* Part 2 Due: Thursday 5/21 7:00am
+
+* Last name:
+
+* First name:
+
+* GitHub username:
+
+* Submission instructions
+** Part 1
+Type answers to all text (not diagram) questions in a file named
+answers.txt and add to the repository prior to the due date and
+time (5/14 11:00am). Label each question as indicated in the question. Add them to
+the file in order.
+
+Scan / take a picture of diagram questions that will allow you to make
+a multi-page pdf file. Scan one page per diagram question and clearly
+label which question it answers.
+
+You can use a phone app like ClearScanner or AdobeScan for this. You
+should install and test the application prior to the final exam
+starting.
+
+Name the pdf file diagrams.pdf and add to the repository prior to the
+due date and time (5/14 11:00am).
+
+
+* Affidavits
+When you complete part 1 please write out on paper a statement indicating you worked alone on
+the exam  during the specified time period and did not use any
+additional resources to help complete the exam (such as notes, books,
+a programmer editor or IDE or other online resource, code samples
+etc.).
+
+Print your name, sign and date the document scan it and add it to the
+repo under a file named affidavit1.pdf. 
+
+
+*do not forget to do this part and add the two affidavits to the repo*
+
+* Part 1 questions
+** Diagram 1 - Insert
+Draw the binary search tree that results from inserting nodes with
+these values (in the order presented) using the algorithm we developed
+in class.
+
+50,60,70,20,65,63,67,62,80,75
+
+** Diagram 2 - Delete
+Draw the binary search tree that results from deleting the node with
+the value 70 from the tree you drew for the previous question.  
+
+** Diagram 3 - heaps
+
+1. Draw the minheap represented by inserting the following values, in
+   order into an empty heap:
+
+   |---+---+---+---+---+---+---+---+---+----|
+   | 7 | 4 | 3 | 2 | 6 | 5 | 1 | 9 | 8 | 10 |
+   |---+---+---+---+---+---+---+---+---+----|
+
+2. Draw the minheap represented after you perform the removemin
+   operation on the heap you created
+
+
+
+** text 1 - Traversal
+Write out the nodes as they would be processed/printed using a
+pre-order traversal of the tree you created in part 1.1 (the insert
+into binary search tree question).
+** text 2 - sorting
+1. write out what the contents of this array will be after the first
+   partitioning of a quicksort (using any standard partition
+   technique). Use the first element of the array as the pivot value.
+
+   |---+---+---+---+---+---+---+---+---+----|
+   | 7 | 4 | 3 | 2 | 6 | 5 | 1 | 9 | 8 | 10 |
+   |---+---+---+---+---+---+---+---+---+----|
+   
+2. Explain the advantages and disadvantages between the quicksort and
+   mergesorts. 
+
+
+
+
+** text 3 - runtime
+
+1. What are the strengths and deficiencies of a Binary Search Tree in
+   terms of runtimes on standard operations (insert, delete, search,
+   traverse)? Justify your answer using big-Oh notation.
+2. A heap has certain properties that make it superior to a Binary
+   Search Tree and others that make it inferior. Describe and justify
+   when and where a heap would be preferable to a BST and when it
+   would not.
+
+
+

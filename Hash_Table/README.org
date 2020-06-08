@@ -1,0 +1,86 @@
+* Spring 2020 - 235 - Final Exam 
+
+* Part 1 Due: Thursday 5/14 11:00am - released on 5/14
+
+* Part 2 Due: Thursday 5/21 7:00am
+
+* Last name: Alija
+* First name: Asllan
+* GitHub username: aalija8157
+* Submission instructions
+
+** Part 2
+
+Write the specified program(s) and add them to the repository. Make
+sure to add all necessary source files. You will need to use *make*
+and have a target *tests* that will run doctest based tests to show
+that your program works.
+
+Note that this repo has a starter Makefile as well as a barebones
+main.cpp and tests.cpp. Modify as needed.
+
+
+* Affidavits
+
+When you complete part 2 please write out on paper a statement
+indicating that you worked within the constraints of the
+assignment. That is, you were allowed to use your notes and online
+resources as well as ask for help but any help you recieved or code
+you used from other people or sources must be acknowledged and
+referenced in comments in your code and in this README file.
+
+Print your name, sign and date the document scan it and add it to the
+repo under a file named affidavit1.pdf. 
+
+
+
+*do not forget to do this part and add the two affidavits to the repo*
+
+* Part 2 question
+
+You are going to write a program that implements an open hash table.
+
+You may reuse code you wrote for your earlier assignments but make
+sure to document the code if you do in the comments.
+
+1. Use this as a base class in which you will store data:
+#+begin_src c++
+  class person{
+  public:
+    std::string last; // last name
+    std::string first; // first name
+    std::string title; 
+    double salary;
+    // you can add public or private members as you need.
+    // you can also make the above private if you prefer.
+    // you can also change the data items from title and salary
+    // if you want. Just make sure to use last and first name
+    // as your keys.
+  
+  };
+
+#+end_src
+
+1. You should write a function ~int hash(person p)~ that accepts a
+   ~person~ and returns a hash code for use in inserting the person
+   into your hash table. the ~hash~ function can be a member of the
+   hash_table class or an independent function.
+
+2. Write the hash_table class. The specifications are:
+
+   1. The class will implement an open hash table. That is, an array
+      of linked lists as described in class. Each node of the linked
+      lists will contain or refer to an instance of the ~person~
+      class.
+
+   2. It should support the following operations:
+      - insert(person p) -- insert the person into the hash table.
+      - delete(person p) -- delete the person into the hash table.
+      - retrieve(person p) - given an instance of person that only has
+        the key valuse (first and last names) return the full person
+        (if they're in the table).
+      - one or more constructors
+      - a desctructor
+
+Remember that this should be tested thoroughly via doctest. Anything
+that doesn't work should be documented.
